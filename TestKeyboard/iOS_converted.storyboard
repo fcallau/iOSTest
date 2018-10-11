@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bSf-8J-TH8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TestKeyboardViewController-->
+        <scene sceneID="yak-N0-Hn2">
+            <objects>
+                <viewController storyboardIdentifier="TestKeyboardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bSf-8J-TH8" userLabel="TestKeyboardViewController" customClass="TestKeyboardViewController" customModule="TestKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="xoV-kQ-upD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yg9-w7-sfi">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2yE-zL-SlH">
+                                <rect key="frame" x="16" y="40" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.53317844550000004" green="0.3526975792" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="omN-Rj-ofD" firstAttribute="trailing" secondItem="2yE-zL-SlH" secondAttribute="trailing" constant="16" id="8FQ-sK-Fkd"/>
+                            <constraint firstItem="omN-Rj-ofD" firstAttribute="trailing" secondItem="Yg9-w7-sfi" secondAttribute="trailing" constant="16" id="8t6-br-4sD"/>
+                            <constraint firstItem="omN-Rj-ofD" firstAttribute="bottom" secondItem="Yg9-w7-sfi" secondAttribute="bottom" constant="20" id="RSt-9l-Nfh"/>
+                            <constraint firstItem="2yE-zL-SlH" firstAttribute="top" secondItem="omN-Rj-ofD" secondAttribute="top" constant="20" id="fnY-CV-YM9"/>
+                            <constraint firstItem="2yE-zL-SlH" firstAttribute="leading" secondItem="omN-Rj-ofD" secondAttribute="leading" constant="16" id="k7Z-HO-VcH"/>
+                            <constraint firstItem="Yg9-w7-sfi" firstAttribute="leading" secondItem="omN-Rj-ofD" secondAttribute="leading" constant="16" id="nFe-u2-Yy5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="omN-Rj-ofD"/>
+                    </view>
+                    <connections>
+                        <outlet property="name" destination="2yE-zL-SlH" id="v1h-L3-Ka0"/>
+                        <outlet property="town" destination="Yg9-w7-sfi" id="9qR-4F-Gcx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lm-9j-9rJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+</document>

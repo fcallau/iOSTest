@@ -1,0 +1,55 @@
+
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"></adaptation>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"></deployment>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"></plugIn>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"></capability>
+    </dependencies>
+    <scenes>
+        <scene sceneID="4LR-ao-Fpf">
+            <objects>
+                <viewController id="NO3-Q4-cro" sceneMemberID="viewController" useStoryboardIdentifierAsRestorationIdentifier="YES" customClass="TestKeyboardViewController" storyboardIdentifier="TestKeyboardViewController" userLabel="TestKeyboardViewController">
+                    <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="MpC-KA-fog" key="view">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"></rect>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"></autoresizingMask>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1kq-QU-crk">
+                                <rect key="frame" x="16" y="812" width="382" height="30"></rect>
+                                <nil key="textColor"></nil>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"></fontDescription>
+                                <textInputTraits key="textInputTraits"></textInputTraits>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DQj-Vy-S7U">
+                                <rect key="frame" x="16" y="64" width="382" height="30"></rect>
+                                <nil key="textColor"></nil>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"></fontDescription>
+                                <textInputTraits key="textInputTraits"></textInputTraits>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23945338007902259" green="0.91275417804718018" blue="0.16187993544927037" alpha="1" colorSpace="custom" customColorSpace="displayP3"></color>
+                        <constraints>
+                            <constraint firstItem="DQj-Vy-S7U" firstAttribute="top" secondItem="JZZ-CI-2X5" secondAttribute="top" constant="20" id="Hv0-3y-YIh"></constraint>
+                            <constraint firstItem="JZZ-CI-2X5" firstAttribute="bottom" secondItem="1kq-QU-crk" secondAttribute="bottom" constant="20" id="iZu-vD-PwT"></constraint>
+                            <constraint firstItem="JZZ-CI-2X5" firstAttribute="trailing" secondItem="DQj-Vy-S7U" secondAttribute="trailing" constant="16" id="Vfc-5a-5mJ"></constraint>
+                            <constraint firstItem="DQj-Vy-S7U" firstAttribute="leading" secondItem="JZZ-CI-2X5" secondAttribute="leading" constant="16" id="OYi-3r-73o"></constraint>
+                            <constraint firstItem="1kq-QU-crk" firstAttribute="leading" secondItem="JZZ-CI-2X5" secondAttribute="leading" constant="16" id="sbn-9N-ANF"></constraint>
+                            <constraint firstItem="JZZ-CI-2X5" firstAttribute="trailing" secondItem="1kq-QU-crk" secondAttribute="trailing" constant="16" id="WwB-0y-VUR"></constraint>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JZZ-CI-2X5"></viewLayoutGuide>
+                        <point key="canvasLocation" x="-325" y="80"></point>
+                    </view>
+                    <connections>
+                        <outlet property="name" destination="DQj-Vy-S7U" id="0go-Ch-Kd0"></outlet>
+                        <outlet property="town" destination="1kq-QU-crk" id="EYp-pD-Vzk"></outlet>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TxP-Q0-0sZ" userLabel="First Responder" sceneMemberID="firstResponder"></placeholder>
+            </objects>
+            <point key="canvasLocation" x="0" y="0"></point>
+        </scene>
+    </scenes>
+    <resources></resources>
+</document>
